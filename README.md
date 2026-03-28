@@ -7,7 +7,8 @@ This module was created from the VRCFT Varjo Module as a basis.
 
 0. Download [VRCFaceTracking](https://github.com/benaclejames/VRCFaceTracking)
 1. Download the latest version from [Releases](https://github.com/Chickenbreadlp/VRCFTStarVRModule/releases)
-2. Enjoy ^^
+2. Import the downloaded Zip in VRCFT
+3. Enjoy ^^
 
 ## Why no Module Registry
 
