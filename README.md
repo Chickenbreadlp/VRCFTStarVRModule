@@ -23,8 +23,8 @@ I haven't been in the VRCFT Discord for ages now, and I don't plan on changing t
 The amount of people who'll find this module useful is also very likely in the single or lower double-digits, so a distribution through manual installation likely won't be major issue.
 
 ## Credits
-- @m3gagluk  
+- [@m3gagluk](https://github.com/m3gagluk)
 	- for making the initial strides in the [VRCFT Varjo module](https://github.com/m3gagluk/VRCFTVarjoModule) (on which this project is based upon)
-- @Nyabsi  
+- [@Nyabsi](https://github.com/Nyabsi)
 	- for creating the float smoother (liberated from their [VRCFT Broken Eye module](https://github.com/Nyabsi/VRCFTBrokenEyeModule))
 	- as well as creating [ReStar](https://github.com/Nyabsi/ReStar), whithout it this module would have made 0 sense to create (StarVR Compass does not deliver the necessary tracking data to use their headset in VRChat)
