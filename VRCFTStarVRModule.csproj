@@ -4,6 +4,7 @@
 	<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="SmoothFloat.cs" />
     <Compile Include="StarVRTypes.cs" />
     <Compile Include="StarVRNativeInterface.cs" />
     <Compile Include="StarVRTrackingModule.cs" />

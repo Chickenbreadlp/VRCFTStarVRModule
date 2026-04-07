@@ -14,6 +14,9 @@ namespace VRCFTStarVRModule
     // This class contains the overrides for any VRCFT Tracking Data struct functions
     public static class TrackingData
     {
+        private static SmoothFloat leftLid = new SmoothFloat();
+        private static SmoothFloat rightLid = new SmoothFloat();
+
         /// <summary>
         /// Function to map a StarVR Vectror3 Gaze Ray to a Vector2 Ray for use in VRCFT
         /// </summary>
@@ -42,8 +45,10 @@ namespace VRCFTStarVRModule
             data.Right.PupilDiameter_MM = rightEye.pupilDiameter;
 
             // Set eye openness
-            data.Left.Openness = leftEye.isOpen ? 1f : 0f;
-            data.Right.Openness = rightEye.isOpen ? 1f : 0f;
+            leftLid.Value = leftEye.isOpen ? 1f : 0f;
+            rightLid.Value = rightEye.isOpen ? 1f : 0f;
+            data.Left.Openness = leftLid.Value;
+            data.Right.Openness = rightLid.Value;
         }
     }
     
@@ -65,6 +70,12 @@ namespace VRCFTStarVRModule
             // Init the tracker class
             tracker = new StarVRNativeInterface();
             bool svrActive = tracker.Initialize(Logger);
+
+            if (svrActive)
+            {
+                // only init float smoother when SVR is running!
+                SmoothFloatWorkers.Init();
+            }
 
             // Tell the lib manager our result with the init and that we (again) do not support Lip Tracking
             return (svrActive, false);
