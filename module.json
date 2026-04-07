@@ -2,7 +2,7 @@
   "InstallationState": 0,
   "ModuleId": "2dabc913-df51-4b7f-90ba-a7fb1db2079d",
   "LastUpdated": "2026-03-28T00:00:00Z",
-  "Version": "1.0.0",
+  "Version": "1.1.0",
   "Downloads": 0,
   "Ratings": 0,
   "Rating": 5,
@@ -10,7 +10,7 @@
   "ModuleName": "VRCFTStarVRModule",
   "ModuleDescription": "The module provides eye tracking data for StarVR One using the official StarVR API",
   "UsageInstructions": "Make sure to have SteamVR running first",
-  "DownloadUrl": "https://github.com/Chickenbreadlp/VRCFTStarVRModule/releases/download/1.0.0/VRCFTStarVRModule.zip",
+  "DownloadUrl": "https://github.com/Chickenbreadlp/VRCFTStarVRModule/releases/download/1.1.0/VRCFTStarVRModule.zip",
   "ModulePageUrl": "https://github.com/Chickenbreadlp/VRCFTStarVRModule",
   "DllFileName": "VRCFTStarVRModule.dll"
 }
